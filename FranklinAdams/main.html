@@ -15,6 +15,10 @@
             --Blue:    #28327E;
             --Black:   #111111;
             --Lightgreen: #44CF6C;
+            --White:   #FFFFFF;
+        }
+        html{
+          scroll-behavior: smooth;
         }
         .navbar-nav .nav-link{
             font-size: 300%;
@@ -27,57 +31,164 @@
         body{
           background-color: var(--Black);
         }
-        .aboutMe p{
-          color: #FFFFFF;
-          font-size: 250%; 
+        #Landing p {
+          color: var(--White);
+          font-size: 300%; 
           font-weight: 400;
-        }
-        .about-Container img{
-            scale: 150%;
         }
         .container h1{
           color: var(--Lightgreen);
         }
+        .profile{
+          padding-top: 70px;
+        }
+        .section {
+          min-height: 100vh;
+          padding: 80px 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+        #Services{
+          padding-top: 350px;
+        }
+        #Services p{
+          color: var(--White);
+          font-size: 200%; 
+          font-weight: 400;
+        }
+        #Services img{
+          max-width: 150%;
+          height: auto; 
+        }
+        #About p{
+          color: var(--White);
+          font-size: 250%; 
+          font-weight: 400;
+        }
+        #Contact p{
+          color: var(--White);
+          font-size: 250%; 
+          font-weight: 400;
+        }
+        
     </style>
 
 </head>
 <body>
 
 
-  <nav class="navbar navbar-expand-lg  nav-justified">
-    <img src="/WebPieces/FranklinAdams/images/Adams-Marketing-Logo.png">
+  <nav class="navbar navbar-expand-lg fixed-top nav-justified py-1">
+    <img src="/FranklinAdams/images/Adams-Marketing-Logo.png">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav nav-justified w-100 sections">
-        <a class="nav-item nav-link" href="#">Landing</a>
-        <a class="nav-item nav-link" href="#">Services</a>
-        <a class="nav-item nav-link" href="#">About</a>
-        <a class="nav-item nav-link" href="#">Contact</a>
+        <a class="nav-item nav-link" href="#Landing">Landing</a>
+        <a class="nav-item nav-link" href="#Services">Services</a>
+        <a class="nav-item nav-link" href="#About">About</a>
+        <a class="nav-item nav-link" href="#Contact">Contact</a>
       </div>
     </div>
   </nav>
 
 
 
-    <div class="container about-container pt-5">
-      <div class="container-fluid p-4">
-        <h1 class="display-3 fw-bold">Franklin Adams</h1>
-      </div>
-      <div class="row align-items-center gap-4">
-        <!-- Left Column: Image -->
-        <div class="col-md-6">
-          <img src="/WebPieces/FranklinAdams/images/imageedit_2_2257610954.png" alt="Profile" class="img-fluid rounded profile-image">
+   <!-- Section 1: Landing -->
+  <section id="Landing" class="section">
+    <div class="container pt-5">
+        <div class="row align-items-center profile">
+            <div class="col-md-7">
+                <h1 class="display-2 fw-bold">Franklin Adams</h1>
+                <img src="/FranklinAdams/images/profileXL.png" alt="Profile" class="img-fluid rounded profile-image">
+            </div>
+            <div class="col-md-5 aboutMe">
+                <p>Brand Identity/Marketing</p>
+                <p>Storytelling</p>
+                <p>Print & Digital Branding</p>
+                <h1><u>Elevate Your Presence</u></h1>
+            </div>
         </div>
-        <!-- Right Column: Text and Contact Info -->
-        <div class="col-md-6 aboutMe" >
-          <p>Brand Identity / Marketing</p>
-          <p>Storytelling</p>
-          <p>Print & Digital Branding</p>
-       </div>
-      </div>
     </div>
+  </section>
+
+    <!-- Services Section -->
+  <section id="Services" class="section">
+    <div class="container text-center">
+
+      <!-- Title: Our Services -->
+      <h1 class="display-1">Our Services</h1>
+
+      <!-- Image Grid -->
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-3 p-3">
+          <img src="/FranklinAdams/images/carWrap.png" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6 col-lg-3 p-3">
+          <img src="/FranklinAdams/images/cap.png" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6 col-lg-3 p-3">
+          <img src="/FranklinAdams/images/Brand_Shirts.png" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6 col-lg-3 p-3">
+          <img src="/FranklinAdams/images/Brand_Embroidery.png" class="img-fluid rounded">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+    <!-- About Section -->
+  <section id="About" class="section">
+    <div class="container text-center pt-5">
+      
+      <!-- Title -->
+      <h1 class="display-1">About</h1>
+
+      <!-- Paragraph -->
+      <p>
+        At Adams Marketing Group, we understand that your brand's
+        identity is more than just a logo—it's the essence of your business.
+        With over 20 years of experience, our commitment is to transform your vision into tangible
+        expressions that resonate with your audience. From apparel to vehicle
+        lettering and window film, we ensure that every product not only meets
+        but exceeds your expectations, reinforcing your brand's presence in every detail.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="Contact" class="section">
+  <div class="container text-center">
+
+    <!-- Title -->
+    <h1 class="display-1">Contact</h1>
+
+      <!-- Contact Information -->
+      <p>
+        Email: <a href="mailto:AdamsFranklinTX@gmail.com">AdamsFranklinTX@gmail.com</a>
+      </p>
+      <p>
+        Phone: <a href="tel:+12108432820">(210)843-2820</a>
+      </p>
+
+      <!-- Social Media Links -->
+      <div class="social-icons mt-3">
+        <a href="https://www.facebook.com/franklin.adams.3998" target="_blank">
+          <img src="/FranklinAdams/images/facebook_Logo.png" alt="Facebook" width="200">
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
     
 
 
